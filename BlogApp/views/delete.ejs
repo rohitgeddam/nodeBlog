@@ -1,0 +1,6 @@
+<% include ./partials/header %>
+<h1>CONFORM DELETE!</h1>
+<form class="ui form" action="/blog/<%=blog._id%>?_method=DELETE" method="post">
+  <button class="negative ui button" type="submit">Delete</button>
+</form>
+<% include ./partials/footer %>

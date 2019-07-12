@@ -1,0 +1,19 @@
+<% include ./partials/header %>
+<form class="ui form" action="/blog/<%=blog._id%>?_method=PUT" method="POST">
+  <div class="field">
+    <label>Name</label>
+    <input type="text" name="blog[title]" value="<%=blog.title%>">
+  </div>
+  <div class="field">
+    <label>Image url</label>
+    <input type="text" name="blog[image]" value="<%=blog.image%>"" >
+  </div>
+
+  <div class="field">
+    <label>Content</label>
+    <textarea name="blog[content]"><%=blog.content%></textarea>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+<% include ./partials/footer %>

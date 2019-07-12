@@ -1,0 +1,9 @@
+<% include ./partials/header %>
+<h1>This is the show page.</h1>
+
+<h1><%=blog.title%></h1>
+<img src="<%=blog.image%>" alt="">
+<p><%=blog.content%></p>
+<a href="/blog/<%=blog._id%>/edit" class="ui grey button">Edit</a>
+<a href="/blog/<%=blog._id%>/delete" class="negative ui button">Delete</a>
+<% include ./partials/footer %>
